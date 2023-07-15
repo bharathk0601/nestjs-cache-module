@@ -17,7 +17,7 @@ export class CacheModule {
                 CacheService,
                 {
                     provide: "DEFAULT_TTL",
-                    useFactory: () => opts?.defaultTTL || 10
+                    useFactory: () => defaultTTL
                 },
                 {
                     provide: "MAX_TTL",
